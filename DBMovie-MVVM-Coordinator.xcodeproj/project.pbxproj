@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		0EF2B7B923CA3116006BF92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7B823CA3116006BF92F /* AppDelegate.swift */; };
 		0EF2B7BB23CA3116006BF92F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */; };
-		0EF2B7BD23CA3116006BF92F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7BC23CA3116006BF92F /* ViewController.swift */; };
-		0EF2B7C023CA3116006BF92F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF2B7BE23CA3116006BF92F /* Main.storyboard */; };
 		0EF2B7C323CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7C123CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld */; };
 		0EF2B7C523CA3118006BF92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF2B7C423CA3118006BF92F /* Assets.xcassets */; };
 		0EF2B7C823CA3118006BF92F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF2B7C623CA3118006BF92F /* LaunchScreen.storyboard */; };
 		0EF2B7D323CA3118006BF92F /* DBMovie_MVVM_CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7D223CA3118006BF92F /* DBMovie_MVVM_CoordinatorTests.swift */; };
 		0EF2B7DE23CA3118006BF92F /* DBMovie_MVVM_CoordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7DD23CA3118006BF92F /* DBMovie_MVVM_CoordinatorUITests.swift */; };
+		0EF2B7FD23CA35F7006BF92F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7FB23CA35F7006BF92F /* MainViewController.swift */; };
+		0EF2B7FE23CA35F7006BF92F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF2B7FC23CA35F7006BF92F /* MainViewController.xib */; };
+		0EF2B80023CA38B2006BF92F /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7FF23CA38B2006BF92F /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		0EF2B7B523CA3116006BF92F /* DBMovie-MVVM-Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBMovie-MVVM-Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF2B7B823CA3116006BF92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EF2B7BC23CA3116006BF92F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0EF2B7BF23CA3116006BF92F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EF2B7C223CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBMovie_MVVM_Coordinator.xcdatamodel; sourceTree = "<group>"; };
 		0EF2B7C423CA3118006BF92F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EF2B7C723CA3118006BF92F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		0EF2B7D923CA3118006BF92F /* DBMovie-MVVM-CoordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DBMovie-MVVM-CoordinatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF2B7DD23CA3118006BF92F /* DBMovie_MVVM_CoordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMovie_MVVM_CoordinatorUITests.swift; sourceTree = "<group>"; };
 		0EF2B7DF23CA3118006BF92F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF2B7FB23CA35F7006BF92F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0EF2B7FC23CA35F7006BF92F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0EF2B7FF23CA38B2006BF92F /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,14 @@
 		0EF2B7B723CA3116006BF92F /* DBMovie-MVVM-Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				0EF2B7B823CA3116006BF92F /* AppDelegate.swift */,
-				0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */,
-				0EF2B7BC23CA3116006BF92F /* ViewController.swift */,
-				0EF2B7BE23CA3116006BF92F /* Main.storyboard */,
+				0EF2B7F023CA33A8006BF92F /* Model */,
+				0EF2B7EF23CA339D006BF92F /* View Model */,
+				0EF2B7EE23CA3397006BF92F /* View */,
+				0EF2B7ED23CA337F006BF92F /* Utilites */,
+				0EF2B7EC23CA3353006BF92F /* Supporting File */,
+				0EF2B7EB23CA3348006BF92F /* Application */,
 				0EF2B7C423CA3118006BF92F /* Assets.xcassets */,
 				0EF2B7C623CA3118006BF92F /* LaunchScreen.storyboard */,
-				0EF2B7C923CA3118006BF92F /* Info.plist */,
-				0EF2B7C123CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld */,
 			);
 			path = "DBMovie-MVVM-Coordinator";
 			sourceTree = "<group>";
@@ -129,6 +131,55 @@
 				0EF2B7DF23CA3118006BF92F /* Info.plist */,
 			);
 			path = "DBMovie-MVVM-CoordinatorUITests";
+			sourceTree = "<group>";
+		};
+		0EF2B7EB23CA3348006BF92F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0EF2B7B823CA3116006BF92F /* AppDelegate.swift */,
+				0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */,
+				0EF2B7FF23CA38B2006BF92F /* ApplicationCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0EF2B7EC23CA3353006BF92F /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				0EF2B7C123CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld */,
+				0EF2B7C923CA3118006BF92F /* Info.plist */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		0EF2B7ED23CA337F006BF92F /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		0EF2B7EE23CA3397006BF92F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EF2B7FB23CA35F7006BF92F /* MainViewController.swift */,
+				0EF2B7FC23CA35F7006BF92F /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EF2B7EF23CA339D006BF92F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0EF2B7F023CA33A8006BF92F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF2B7C823CA3118006BF92F /* LaunchScreen.storyboard in Resources */,
+				0EF2B7FE23CA35F7006BF92F /* MainViewController.xib in Resources */,
 				0EF2B7C523CA3118006BF92F /* Assets.xcassets in Resources */,
-				0EF2B7C023CA3116006BF92F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF2B7BD23CA3116006BF92F /* ViewController.swift in Sources */,
+				0EF2B80023CA38B2006BF92F /* ApplicationCoordinator.swift in Sources */,
 				0EF2B7B923CA3116006BF92F /* AppDelegate.swift in Sources */,
 				0EF2B7BB23CA3116006BF92F /* SceneDelegate.swift in Sources */,
 				0EF2B7C323CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld in Sources */,
+				0EF2B7FD23CA35F7006BF92F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EF2B7BE23CA3116006BF92F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EF2B7BF23CA3116006BF92F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0EF2B7C623CA3118006BF92F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36PQW8N3MG;
-				INFOPLIST_FILE = "DBMovie-MVVM-Coordinator/Info.plist";
+				INFOPLIST_FILE = "DBMovie-MVVM-Coordinator/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36PQW8N3MG;
-				INFOPLIST_FILE = "DBMovie-MVVM-Coordinator/Info.plist";
+				INFOPLIST_FILE = "DBMovie-MVVM-Coordinator/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
