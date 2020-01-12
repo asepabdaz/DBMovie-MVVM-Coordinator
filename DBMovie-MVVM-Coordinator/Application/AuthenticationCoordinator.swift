@@ -8,6 +8,19 @@
 
 import UIKit
 
-class AuthenticationCoordinator: NSObject {
+class AuthenticationCoordinator: NSObject, Coordinatable{
+    
+    private(set) var rootController: UINavigationController
+    private(set) lazy var childCoordinators: [Coordinatable] = []
+    
+    required init(rootViewController: UINavigationController) {
+        self.rootController = rootViewController
+        super.init()
+    }
+    
+    func start() {
+        
+    }
+    
     
 }
