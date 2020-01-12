@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum AuthenticationAction {
+    case OpenSignUp
+    case AuthSuccess
+}
+
 class AuthenticationCoordinator: NSObject, Coordinatable{
     
     private(set) var rootController: UINavigationController
@@ -20,8 +25,16 @@ class AuthenticationCoordinator: NSObject, Coordinatable{
     }
     
     func start() {
-        
+        let loginController = LoginViewController()
+        //        loginController.com
+        rootController.pushViewController(loginController, animated: false)
     }
-    
-    
+}
+
+private extension AuthenticationCoordinator {
+    func pushSignUp() {
+        let signUpController = SignUpViewController()
+//        signUpController.complition
+        rootController.pushViewController(signUpController, animated: false)
+    }
 }
