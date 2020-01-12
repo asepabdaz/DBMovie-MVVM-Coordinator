@@ -12,6 +12,7 @@ class AuthenticationCoordinator: NSObject, Coordinatable{
     
     private(set) var rootController: UINavigationController
     private(set) lazy var childCoordinators: [Coordinatable] = []
+    var complitionHandler: ComplitionBlock?
     
     required init(rootViewController: UINavigationController) {
         self.rootController = rootViewController
