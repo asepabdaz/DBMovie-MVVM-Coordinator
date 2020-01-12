@@ -6,4 +6,8 @@
 //  Copyright © 2020 Asep Abdaz. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class AuthenticationCoordinator: NSObject {
+    
+}
