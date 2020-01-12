@@ -8,6 +8,12 @@
 
 import UIKit
 
+@objc protocol Coordinatable {
+    var childCoordinators: [Coordinatable] { get }
+    init(rootViewController: UINavigationController)
+    func start()
+}
+
 class ApplicationCoordinator: NSObject {
     private(set) var rootController: UINavigationController
     
