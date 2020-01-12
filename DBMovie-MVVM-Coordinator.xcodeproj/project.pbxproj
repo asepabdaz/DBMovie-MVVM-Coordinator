@@ -15,6 +15,7 @@
 		0E07C42423CAC17200BAFC36 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07C42223CAC17200BAFC36 /* DetailMovieViewController.swift */; };
 		0E07C42523CAC17200BAFC36 /* DetailMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E07C42323CAC17200BAFC36 /* DetailMovieViewController.xib */; };
 		0E07C42823CAC1E700BAFC36 /* MovieCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07C42723CAC1E700BAFC36 /* MovieCoordinator.swift */; };
+		0E07C42B23CAC85800BAFC36 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07C42A23CAC85800BAFC36 /* UIViewController+Extension.swift */; };
 		0EF2B7B923CA3116006BF92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7B823CA3116006BF92F /* AppDelegate.swift */; };
 		0EF2B7BB23CA3116006BF92F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */; };
 		0EF2B7C323CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7C123CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld */; };
@@ -53,6 +54,7 @@
 		0E07C42223CAC17200BAFC36 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		0E07C42323CAC17200BAFC36 /* DetailMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieViewController.xib; sourceTree = "<group>"; };
 		0E07C42723CAC1E700BAFC36 /* MovieCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCoordinator.swift; sourceTree = "<group>"; };
+		0E07C42A23CAC85800BAFC36 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		0EF2B7B523CA3116006BF92F /* DBMovie-MVVM-Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBMovie-MVVM-Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF2B7B823CA3116006BF92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		0E07C42923CAC83800BAFC36 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E07C42A23CAC85800BAFC36 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		0EF2B7AC23CA3116006BF92F = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 		0EF2B7B723CA3116006BF92F /* DBMovie-MVVM-Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				0E07C42923CAC83800BAFC36 /* Extension */,
 				0EF2B7F023CA33A8006BF92F /* Model */,
 				0EF2B7EF23CA339D006BF92F /* View Model */,
 				0EF2B7EE23CA3397006BF92F /* View */,
@@ -373,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E07C41A23CAC0EC00BAFC36 /* LoginViewController.swift in Sources */,
+				0E07C42B23CAC85800BAFC36 /* UIViewController+Extension.swift in Sources */,
 				0E07C42823CAC1E700BAFC36 /* MovieCoordinator.swift in Sources */,
 				0E07C42423CAC17200BAFC36 /* DetailMovieViewController.swift in Sources */,
 				0E0426E323CA4C06001DFD26 /* AuthenticationCoordinator.swift in Sources */,

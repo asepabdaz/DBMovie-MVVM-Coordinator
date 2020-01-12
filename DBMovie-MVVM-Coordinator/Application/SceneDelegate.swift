@@ -11,7 +11,10 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    private lazy var applicationCoordinator: ApplicationCoordinator = {
+        return ApplicationCoordinator(rootViewController: self.window?.rootViewController as! UINavigationController)
+    }()
 
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
@@ -22,6 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window!.rootViewController = startVC
         window!.makeKeyAndVisible()
+//        applicationCoordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
