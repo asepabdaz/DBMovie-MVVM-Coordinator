@@ -26,6 +26,22 @@ class ApplicationCoordinator: NSObject, Coordinatable {
     }
     
     func start() {
-        
+        isLoggedIn() ? showAuth() : showAuth()
+    }
+    
+    func isLoggedIn() -> Bool {
+        return false
+    }
+    
+    func showMainViewController() {
+        let mainVc = MovieCoordinator(rootViewController: rootController)
+        mainVc.start()
+        childCoordinators.append(mainVc)
+    }
+    
+    func showAuth() {
+        let authenticationCoordinator = AuthenticationCoordinator(rootViewController: rootController)
+        authenticationCoordinator.start()
+        childCoordinators.append(authenticationCoordinator)
     }
 }
