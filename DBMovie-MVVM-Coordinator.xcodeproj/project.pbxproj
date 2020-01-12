@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0E0426E323CA4C06001DFD26 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0426E223CA4C06001DFD26 /* AuthenticationCoordinator.swift */; };
+		0E07C41A23CAC0EC00BAFC36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07C41823CAC0EC00BAFC36 /* LoginViewController.swift */; };
+		0E07C41B23CAC0EC00BAFC36 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E07C41923CAC0EC00BAFC36 /* LoginViewController.xib */; };
+		0E07C41F23CAC11C00BAFC36 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07C41D23CAC11C00BAFC36 /* SignUpViewController.swift */; };
+		0E07C42023CAC11C00BAFC36 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E07C41E23CAC11C00BAFC36 /* SignUpViewController.xib */; };
+		0E07C42423CAC17200BAFC36 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07C42223CAC17200BAFC36 /* DetailMovieViewController.swift */; };
+		0E07C42523CAC17200BAFC36 /* DetailMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E07C42323CAC17200BAFC36 /* DetailMovieViewController.xib */; };
+		0E07C42823CAC1E700BAFC36 /* MovieCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07C42723CAC1E700BAFC36 /* MovieCoordinator.swift */; };
 		0EF2B7B923CA3116006BF92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7B823CA3116006BF92F /* AppDelegate.swift */; };
 		0EF2B7BB23CA3116006BF92F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */; };
 		0EF2B7C323CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B7C123CA3116006BF92F /* DBMovie_MVVM_Coordinator.xcdatamodeld */; };
@@ -39,6 +46,13 @@
 
 /* Begin PBXFileReference section */
 		0E0426E223CA4C06001DFD26 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		0E07C41823CAC0EC00BAFC36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0E07C41923CAC0EC00BAFC36 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		0E07C41D23CAC11C00BAFC36 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0E07C41E23CAC11C00BAFC36 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		0E07C42223CAC17200BAFC36 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
+		0E07C42323CAC17200BAFC36 /* DetailMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieViewController.xib; sourceTree = "<group>"; };
+		0E07C42723CAC1E700BAFC36 /* MovieCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCoordinator.swift; sourceTree = "<group>"; };
 		0EF2B7B523CA3116006BF92F /* DBMovie-MVVM-Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DBMovie-MVVM-Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF2B7B823CA3116006BF92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +96,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E07C41723CAC07F00BAFC36 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0E07C41823CAC0EC00BAFC36 /* LoginViewController.swift */,
+				0E07C41923CAC0EC00BAFC36 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0E07C41C23CAC0F900BAFC36 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				0E07C41D23CAC11C00BAFC36 /* SignUpViewController.swift */,
+				0E07C41E23CAC11C00BAFC36 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		0E07C42123CAC15600BAFC36 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0E07C42223CAC17200BAFC36 /* DetailMovieViewController.swift */,
+				0E07C42323CAC17200BAFC36 /* DetailMovieViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		0E07C42623CAC1C100BAFC36 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0E0426E223CA4C06001DFD26 /* AuthenticationCoordinator.swift */,
+				0E07C42723CAC1E700BAFC36 /* MovieCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		0EF2B7AC23CA3116006BF92F = {
 			isa = PBXGroup;
 			children = (
@@ -138,10 +188,10 @@
 		0EF2B7EB23CA3348006BF92F /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				0E07C42623CAC1C100BAFC36 /* Coordinator */,
 				0EF2B7B823CA3116006BF92F /* AppDelegate.swift */,
 				0EF2B7BA23CA3116006BF92F /* SceneDelegate.swift */,
 				0EF2B7FF23CA38B2006BF92F /* ApplicationCoordinator.swift */,
-				0E0426E223CA4C06001DFD26 /* AuthenticationCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -165,6 +215,9 @@
 		0EF2B7EE23CA3397006BF92F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E07C42123CAC15600BAFC36 /* Detail */,
+				0E07C41C23CAC0F900BAFC36 /* SignUp */,
+				0E07C41723CAC07F00BAFC36 /* Login */,
 				0EF2B7FB23CA35F7006BF92F /* MainViewController.swift */,
 				0EF2B7FC23CA35F7006BF92F /* MainViewController.xib */,
 			);
@@ -289,6 +342,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E07C42023CAC11C00BAFC36 /* SignUpViewController.xib in Resources */,
+				0E07C41B23CAC0EC00BAFC36 /* LoginViewController.xib in Resources */,
+				0E07C42523CAC17200BAFC36 /* DetailMovieViewController.xib in Resources */,
 				0EF2B7C823CA3118006BF92F /* LaunchScreen.storyboard in Resources */,
 				0EF2B7FE23CA35F7006BF92F /* MainViewController.xib in Resources */,
 				0EF2B7C523CA3118006BF92F /* Assets.xcassets in Resources */,
@@ -316,7 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E07C41A23CAC0EC00BAFC36 /* LoginViewController.swift in Sources */,
+				0E07C42823CAC1E700BAFC36 /* MovieCoordinator.swift in Sources */,
+				0E07C42423CAC17200BAFC36 /* DetailMovieViewController.swift in Sources */,
 				0E0426E323CA4C06001DFD26 /* AuthenticationCoordinator.swift in Sources */,
+				0E07C41F23CAC11C00BAFC36 /* SignUpViewController.swift in Sources */,
 				0EF2B80023CA38B2006BF92F /* ApplicationCoordinator.swift in Sources */,
 				0EF2B7B923CA3116006BF92F /* AppDelegate.swift in Sources */,
 				0EF2B7BB23CA3116006BF92F /* SceneDelegate.swift in Sources */,
