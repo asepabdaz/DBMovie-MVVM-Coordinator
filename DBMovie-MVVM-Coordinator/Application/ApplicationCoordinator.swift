@@ -14,10 +14,18 @@ import UIKit
     func start()
 }
 
-class ApplicationCoordinator: NSObject {
+class ApplicationCoordinator: NSObject, Coordinatable {
+    
     private(set) var rootController: UINavigationController
     
-    init(rootController: UINavigationController) {
-        self.rootController = rootController
+    private(set) lazy var childCoordinators: [Coordinatable] = []
+    
+    required init(rootViewController: UINavigationController) {
+        self.rootController = rootViewController
+        super.init()
+    }
+    
+    func start() {
+        
     }
 }
