@@ -26,7 +26,14 @@ class AuthenticationCoordinator: NSObject, Coordinatable{
     
     func start() {
         let loginController = LoginViewController()
-        //        loginController.com
+        loginController.complitionHandler = { action in
+            switch action {
+            case .OpenSignUp:
+                print("Test")
+            case .AuthSuccess:
+                return
+            }
+        }
         rootController.pushViewController(loginController, animated: false)
     }
 }
@@ -34,7 +41,15 @@ class AuthenticationCoordinator: NSObject, Coordinatable{
 private extension AuthenticationCoordinator {
     func pushSignUp() {
         let signUpController = SignUpViewController()
-//        signUpController.complition
+        signUpController.complitionHandler = { action in
+            switch action {
+            case .AuthSuccess:
+                return
+            default:
+                print("some")
+            }
+            
+        }
         rootController.pushViewController(signUpController, animated: false)
     }
 }

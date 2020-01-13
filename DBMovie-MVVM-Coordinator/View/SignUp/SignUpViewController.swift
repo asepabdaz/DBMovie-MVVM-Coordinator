@@ -9,7 +9,8 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    var complitionHandler: Optional<(AuthenticationAction) -> ()> = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
