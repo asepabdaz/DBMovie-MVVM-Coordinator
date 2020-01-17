@@ -29,7 +29,7 @@ class ApplicationCoordinator: NSObject, Coordinatable {
     }
     
     func start() {
-        isLoggedIn() ? showAuth() : showAuth()
+        isLoggedIn() ? showMainViewController() : showAuth()
     }
     
     func isLoggedIn() -> Bool {
